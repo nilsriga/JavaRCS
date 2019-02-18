@@ -5,6 +5,8 @@
  */
 package d1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author User
@@ -15,7 +17,17 @@ public class D1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Kā tevi sauc?");
+        //int, char, bool, double, string, float
+        
+        Scanner sc = new Scanner(System.in);
+        
+        String simboli;
+        
+        simboli = sc.nextLine(); // ja tas ir String
+        
+        System.out.println("Tevi sauc " + simboli);
+
     }
     
 }
