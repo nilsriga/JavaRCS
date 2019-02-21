@@ -20,6 +20,9 @@ public class D3 {
         //skaitluSumma();
         //menuSaskaitisana();
         kalkulators();
+        parKlasem jaunsObjeks  = new parKlasem();
+        parKlasem.fun();
+        // nestradas, jo nav statiska parKlasem.notStaticFun();
     }
     
     private static void kalkulators() {
@@ -160,23 +163,27 @@ public class D3 {
 //            int a = 0;
 //            int b
 //        }
+    public static int noapalosana(double x) {
+        return (int)x;
+        }
         
     public static double ievade(double i) {
         Scanner sc = new Scanner(System.in);
         
-        if (i == Math.ceil(i)) {
-            System.out.println("ieavdi " + i + ". skaitli: ");
-            double x = sc.nextInt();
-            return x;
+        System.out.println("ieavdi " + noapalosana(i) + ". skaitli: ");
+        double x = sc.nextDouble();
+
+        return x;
+    }
+    
+    private static void rezultataIzvade(double x) {
+
+        if (x == Math.ceil(x)) {
+            System.out.println(noapalosana(x)); 
         } else {
-            System.out.println("ieavdi " + (int)i + ". skaitli: ");
-            int x = sc.nextInt();
-            return x;
+            System.out.println(x);
         }
         
-
-
-
     }
         
     private static void saskaitisanaArIzvadi() {
@@ -185,7 +192,7 @@ public class D3 {
         double b = ievade(2);
         result = a + b;
         
-        System.out.println(result);
+        rezultataIzvade(result);
     }
         
     private static void atnemsanaArIzvadi() {

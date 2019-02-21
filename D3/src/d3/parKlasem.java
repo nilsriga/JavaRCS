@@ -3,12 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package parKlasem;
+package d3;
 
 /**
  *
  * @author User
  */
 public class parKlasem {
+    public static void fun() {
+        
+    }
     
+    public void notStaticFun() {
+        
+    }
 }
