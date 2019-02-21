@@ -17,9 +17,9 @@ public class D2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        izvadeMatematika();
-
-        // TODO code application logic here
+        //izvadeMatematika();
+        //cikli();
+        kapinasana();
     }
     private static void izvadeMatematika() {
         Scanner sc = new Scanner(System.in);
@@ -38,9 +38,9 @@ public class D2 {
             System.out.println(atnemsana(a, b));
         } else if (darbiba.equals("vaiIr")) {
             boolean c = nulleLidzDesmit(a, b);
-            if (c == true) {
+            if (c) {
                 System.out.println("Skaitlis IR no 0 - 10 ieskaitot");
-            } else if (c == false) {
+            } else if (!c) {
                 System.out.println("Skaitlis NAV no 0 - 10 ieskaitot");
             }
         }else {
@@ -75,4 +75,52 @@ public class D2 {
             return result = false;
         }
     }
+    private static void cikli(){
+        //for, foreach, while, do..while
+        /*for (int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+        int j = 0;
+        
+        while(j<10) {
+            System.out.println(j);
+            j++;
+        }
+        
+        j = 10;
+        
+        do{
+            System.out.println(j);
+            j++;
+        }while(j<10);
+        
+        String a = "aa";
+        String b = "bb";
+        String c = a+b;
+        c = c + a + b;
+        c += a+b; */
+        Scanner sc = new Scanner(System.in);
+        String a = "";
+        while (!a.equals("*****")) {
+            System.out.println(a);
+            a += "*";
+        }
+    }
+    private static void kapinasana() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("ieavdi 1. skaitļus: ");
+        int a = sc.nextInt();
+        System.out.println("ieavdi 2. skaitļus: ");
+        int b = sc.nextInt();
+        
+        int result = a;
+        for (int i = 1; i <= b; i++) {
+            result *= a;
+        }
+        
+        System.out.println(result);
+
+        kapinasana();
+    }
+    
 }
