@@ -10,6 +10,7 @@ package d3;
  * @author User
  */
 public class parKlasem {
+    
     public static void fun() {
         
     }
@@ -17,4 +18,6 @@ public class parKlasem {
     public void notStaticFun() {
         
     }
+    
+    // ja funkcija ir skatitksa vijņu var izsaukt ar konstruktoru parKlasem new kalse.. utt, bet tā kura ir statiska var izsaukt vnk parKlasem.noStaticFun  utt. 
 }

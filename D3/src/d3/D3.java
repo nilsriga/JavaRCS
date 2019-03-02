@@ -25,7 +25,7 @@ public class D3 {
         // nestradas, jo nav statiska parKlasem.notStaticFun();
     }
     
-    private static void kalkulators() {
+    public static void kalkulators() {
         Scanner sc = new Scanner(System.in);
         String izvele = "";
         
@@ -163,14 +163,12 @@ public class D3 {
 //            int a = 0;
 //            int b
 //        }
-    public static int noapalosana(double x) {
-        return (int)x;
-        }
+
         
     public static double ievade(double i) {
         Scanner sc = new Scanner(System.in);
         
-        System.out.println("ieavdi " + noapalosana(i) + ". skaitli: ");
+        System.out.println("ieavdi " + (int)i + ". skaitli: ");
         double x = sc.nextDouble();
 
         return x;
@@ -179,7 +177,7 @@ public class D3 {
     private static void rezultataIzvade(double x) {
 
         if (x == Math.ceil(x)) {
-            System.out.println(noapalosana(x)); 
+            System.out.println((int)x); 
         } else {
             System.out.println(x);
         }
@@ -189,7 +187,7 @@ public class D3 {
     private static void saskaitisanaArIzvadi() {
         double result = 0;
         double a = ievade(1);
-        double b = ievade(2);
+        double b = ievade(2);       
         result = a + b;
         
         rezultataIzvade(result);
@@ -201,7 +199,7 @@ public class D3 {
         double b = ievade(2);
         result = a - b;
         
-        System.out.println(result);
+        rezultataIzvade(result);
 
     }
         
@@ -211,7 +209,7 @@ public class D3 {
         double b = ievade(2);
         result = a * b;
         
-        System.out.println(result);
+        rezultataIzvade(result);
 
     }
                 
@@ -221,7 +219,7 @@ public class D3 {
         double b = ievade(2);
         result = a / b;
         
-        System.out.println(result);
+        rezultataIzvade(result);
 
     }
                         
@@ -235,7 +233,7 @@ public class D3 {
             result *= a;
         }
         
-        System.out.println(result);
+        rezultataIzvade(result);
 
     }
 }
