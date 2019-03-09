@@ -17,7 +17,6 @@ import java.util.concurrent.atomic.AtomicReference;
  * @author User
  */
 public class karatavas extends javax.swing.JFrame {
-
     /**
      * Creates new form karatavas
      */
@@ -57,15 +56,15 @@ public class karatavas extends javax.swing.JFrame {
                 }
             });
         }
-            for (int i = 0; i < vards.length(); i++) {
-
-//                lastLetter = sc.nextLine();
-
-                if (vards.contains(lastLetter)) {
-                    System.out.println("contains jaa");
-                }
-            }
-            irVinnejis = true;
+//            for (int i = 0; i < vards.length(); i++) {
+//
+////                lastLetter = sc.nextLine();
+//
+//                if (vards.contains(lastLetter)) {
+//                    System.out.println("contains jaa");
+//                }
+//            }
+//            irVinnejis = true;
 
         }
 
